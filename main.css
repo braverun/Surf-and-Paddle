@@ -4,8 +4,7 @@
 body, h1,h3{
   font-family: 'Open Sans', sans-serif;
 }
-
-h2,h4,h5,h6{
+h2,h4,h5,h6, .about, .search{
   font-family: 'Oswald', sans-serif;
 }
 span{
@@ -15,38 +14,69 @@ span{
 header{
   position:relative;
   height: 523px;
-  background-image: url("goofy.jpg");
+  background: linear-gradient(rgba(17, 117, 192, 0.85), rgba(17, 117, 192, 0.85)), url("goofy.jpg");
   background-position: center center;
   background-size: cover;
 }
-header::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(7, 117, 180, 0.5);
-}
 .header-links{
-  margin-left:10%;
-  z-index:4;
+  padding-top: 5px;
+  margin-left: 137px;
+}
+.header-links img{
+  padding-right: 7px;
 }
 .header-links a{
+  transition: all 300ms;
   color:black;
   text-decoration: none;
 }
-
+.header-links a:hover, .header-links span:hover{
+  color:white;
+}
+.header-links span{
+  transition: all 300ms;
+  color:black;
+  font-size:16px;
+  line-height: 3.3;
+}
+.about{
+  margin-left: 592px;
+  font-size: 18px;
+}
+.search{
+  font-size: 18px;
+  margin-left: 10px;
+}
+.search:hover > div{
+  background-image: url("search-white.png");
+}
+.search div{
+  transition:all 300ms;
+  display:inline-block;
+  vertical-align:middle;
+  margin-bottom: 6px;
+  margin-left:-3px;
+  width:27px;
+  height:26px;
+  background-image: url("search.png");
+}
+.header-links img, .header-links a{
+  vertical-align: middle;
+}
 .header-text h1, h3{
   margin: 0;
   text-align: center;
-
 }
 .header-text h1{
   color:white;
+  margin-top: 135px;
+  margin-left: 6px;
+  margin-bottom: -11px;
+  font-size: 96px;
 }
-
+.header-text h3{
+  font-size:12px;
+}
 .blog{
   margin:52px auto;
   max-width:988px;
@@ -54,7 +84,6 @@ header::before {
 .blog p{
   color: #5D686E;
 }
-
 .blog a{
   color:#A2B3BE;
 }
@@ -66,16 +95,31 @@ header::before {
 }
 .profile span{
   color:#006FAE;
-  text-decoration: none;
 }
 .profile span:hover{
   color:#A2B3BE;
 }
-.profile img{
+.profile div{
   border-radius: 50%;
+  background-image: url("http://suitcasestories.com/wp-content/uploads/2013/04/DSC_0055.jpg");
   background-position: center center;
   background-size: cover;
-
+  position:relative;
+}
+.profile div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(7, 117, 180, 0.5);
+  border-radius: 50%;
+  transition: all 300ms;
+}
+.profile div:hover::after {
+  background-color: rgba(7, 117, 180, 0);
 }
 .blog-text{
   display: inline-block;
@@ -94,14 +138,16 @@ header::before {
 .blog-text .profile{
   margin-left: 3px;
   margin-right: 11px;
+  text-decoration: none;
 }
-.blog-text .profile img{
+.blog-text .profile div{
   height:22px;
   width:22px;
   margin-right:4px;
   vertical-align:middle;
+  position:relative;
+  display:inline-block;
 }
-
 .blog-text .profile span{
   vertical-align: middle;
   font-size: 13px;
@@ -117,7 +163,74 @@ header::before {
   padding-top: 20px;
   line-height: 1.6;
 }
-
+.woah {
+  border-left: solid gray 1px;
+  height: 56px;
+  margin-top: 25px;
+  margin-left: 6px;
+}
+.woah blockquote{
+  padding-top: 10px;
+  margin-left: 18px;
+  margin-top: auto;
+  font-size: 29px;
+  color:#006FAE;
+}
+.blog-text3{
+  margin-top: 8px;
+}
+ul{
+  margin:0;
+  padding-left: 3px;
+  padding-top: 16px;
+}
+li{
+  list-style: none;
+  display: inline;
+  margin-left:0;
+  padding-right: 6px;
+}
+button{
+  transition: all 300ms;
+  position:relative;
+  height:30px;
+  border: none;
+  display: inline-block;
+  background-color: #A2B3BE;
+}
+button span{
+  color: white;
+  padding-left: 30px;
+}
+button img{
+  transition: all 300ms;
+  border: 3px solid #5D686E;
+  height: 30px;
+  width:33px;
+  background-color: #5D686E;
+  position:absolute;
+  left:0;
+  top:0;
+  bottom: 0;
+}
+.comments{
+  width: 158px;
+}
+.later{
+  width: 128px;
+  border-width: 3px 4.5px;
+}
+.share{
+  width: 154px;
+  border-width: 3px 4.5px;
+}
+button:hover {
+  background-color: #006FAE;
+}
+button:hover .button-image{
+  background-color:#033550;
+  border: 3px solid #033550;
+}
 .sidebar{
   margin-left: 20px;
   display: inline-block;
@@ -125,7 +238,7 @@ header::before {
   width: 278px;
   height: 904px;
 }
-.sidebar .profile img{
+.sidebar .profile div{
   width:84px;
   height: 84px;
   margin-top: 30px;
@@ -134,7 +247,7 @@ header::before {
 .sidebar .profile span{
   text-align: center;
   display: block;
-  margin-top: 6px;
+  margin-top: 10px;
   font-size: 16px;
 }
 .social-link1{
@@ -160,23 +273,37 @@ header::before {
   background-size: cover;
   background-image: url("http://www.animalnational.com/wp-content/uploads/2013/09/african-elephants-....jpg")
 }
+.sidebar-ad::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(7, 117, 180, 0.5);
+  transition: all 300ms;
+}
+.sidebar-ad:hover::after {
+  background-color: rgba(7, 117, 180, 0);
+}
 .sidebar-ad a{
   position:relative;
   left: 192px;
-  top: 304px;
+  top: 305px;
   font-size: 13px;
 }
 .sidebar h4{
   color:#006FAE;
   margin-bottom: 0;
   font-size: 17px;
-
 }
 .sidebar p{
   margin: 0;
-  margin-top: 4px;
-  font-size: 14px;
+  margin-top: 5px;
+  font-size: 13.5px;
   line-height: 1.7;
+  color:#A2B3BE;
 }
 .mpp{
   height: 147px;
@@ -191,7 +318,6 @@ header::before {
 height:331px;
 margin 0;
 }
-
 .photo h4{
   margin: 0;
   position:absolute;
@@ -199,23 +325,20 @@ margin 0;
   left: 19px;
   font-size: 27px;
 }
-
 .photo-3 h4{
-  bottom: 13px;
+  bottom: 16px;
   line-height:1.3;
 }
-
 .photo div{
-  color:black;
-  transition: color 300ms;
+  transition: all 300ms;
   background-position: center center;
   background-size: cover;
   position:relative;
   display: inline-block;
+  min-width:300px;
   width:25%;
   height:100%;
 }
-
 .photo div:hover {
   color: white;
 }
@@ -228,13 +351,11 @@ margin 0;
   right: 0;
   left: 0;
   background-color: rgba(7, 117, 180, 0.5);
-  color: black;
-  transition: background-color color 300ms;
+  transition: all 300ms;
 }
 .photo div:hover::after {
   background-color: rgba(7, 117, 180, 0);
 }
-
 .photo-1{
   background-image:url("http://images.fineartamerica.com/images-medium-large/1-llama-teeth-daniela-kriva.jpg");
 }
@@ -251,4 +372,46 @@ margin 0;
 footer{
   height: 98px;
   background-color:#033550;
+  color:#A2B3BE;
+}
+footer a{
+  transition: all 300ms;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.footer-logo{
+  margin-top: 13px;
+  margin-left: 151px;
+}
+footer a:visited{
+  color:#A2B3BE;
+}
+footer a:hover{
+  color:white;
+}
+footer p{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  margin-top: 22px;
+}
+footer ul{
+  margin-left: 295px;
+  margin-bottom: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+}
+footer li{
+  padding:6px;
+}
+.nav2{
+  margin-left: -3px;
+}
+.nav3{
+  margin-left: -3px;
+}
+.nav5{
+  margin-left:-3px;
 }
