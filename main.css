@@ -164,7 +164,7 @@ header{
   line-height: 1.6;
 }
 .woah {
-  border-left: solid gray 1px;
+  border-left: solid #A2B3BE 1px;
   height: 56px;
   margin-top: 25px;
   margin-left: 6px;
@@ -287,11 +287,14 @@ button:hover .button-image{
 .sidebar-ad:hover::after {
   background-color: rgba(7, 117, 180, 0);
 }
-.sidebar-ad a{
+.sidebar-ad p{
   position:relative;
   left: 192px;
   top: 305px;
   font-size: 13px;
+}
+.sidebar-ad p:hover{
+  color:#006FAE
 }
 .sidebar h4{
   color:#006FAE;
@@ -306,8 +309,8 @@ button:hover .button-image{
   color:#A2B3BE;
 }
 .mpp{
-  height: 147px;
-  border-top: solid gray 1px;
+  height: 145px;
+  border-top: solid #A2B3BE 1px;
   margin:0;
   font-size: 61px;
   padding-top: 23px;
@@ -338,6 +341,7 @@ margin 0;
   min-width:300px;
   width:25%;
   height:100%;
+  color: black;
 }
 .photo div:hover {
   color: white;
@@ -394,11 +398,11 @@ footer p{
   display: inline-block;
   vertical-align: middle;
   font-size: 13px;
-  margin-top: 22px;
+  margin-top: 27px;
 }
 footer ul{
   margin-left: 295px;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
   display: inline-block;
   vertical-align: middle;
   font-size: 13px;
