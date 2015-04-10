@@ -23,7 +23,7 @@ Layout
 Components
 */
 .blog a:hover {
-  color: #b44607; }
+  color: #0775B4; }
 footer a:hover {
   color: white; }
 
@@ -41,7 +41,7 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(180, 70, 7, 0.5);
+    background-color: rgba(7, 117, 180, 0.5);
     transition: background-color 30s;
     border-radius: 0; }
   header:hover::after {
@@ -111,19 +111,19 @@ header {
   max-width: 988px; }
 
 .blog p {
-  color: #6e635d; }
+  color: #5D686E; }
 
 .blog a {
-  color: #beada2; }
+  color: #A2B3BE; }
 
 .profile a {
   text-decoration: none; }
 
 .profile span {
-  color: #501e03; }
+  color: #033550; }
 
 .profile span:hover {
-  color: #beada2; }
+  color: #A2B3BE; }
 
 .profile div {
   border-radius: 50%;
@@ -139,7 +139,7 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(180, 70, 7, 0.5);
+    background-color: rgba(7, 117, 180, 0.5);
     transition: background-color 300ms;
     border-radius: 50%; }
   .profile div:hover::after {
@@ -156,7 +156,7 @@ header {
   margin-top: 9px;
   margin-bottom: 3px;
   line-height: 1.2;
-  color: #501e03;
+  color: #033550;
   font-size: 60px; }
 
 .blog-text .profile {
@@ -188,7 +188,7 @@ header {
   line-height: 1.6; }
 
 .woah {
-  border-left: solid #beada2 1px;
+  border-left: solid #A2B3BE 1px;
   height: 56px;
   margin-top: 25px;
   margin-left: 6px; }
@@ -198,7 +198,7 @@ header {
   margin-left: 18px;
   margin-top: auto;
   font-size: 29px;
-  color: #b44607; }
+  color: #0775B4; }
 
 .blog-text3 {
   margin-top: 8px; }
@@ -220,7 +220,7 @@ button {
   height: 30px;
   border: none;
   display: inline-block;
-  background-color: #beada2; }
+  background-color: #A2B3BE; }
 
 button span {
   color: white;
@@ -229,10 +229,10 @@ button span {
 
 button img {
   transition: all 300ms;
-  border: 3px solid #6e635d;
+  border: 3px solid #5D686E;
   height: 30px;
   width: 33px;
-  background-color: #6e635d;
+  background-color: #5D686E;
   position: absolute;
   left: 0;
   top: 0;
@@ -250,11 +250,11 @@ button img {
   border-width: 3px 4.5px; }
 
 button:hover {
-  background-color: #b44607; }
+  background-color: #0775B4; }
 
 button:hover .button-image {
-  background-color: #501e03;
-  border: 3px solid #501e03; }
+  background-color: #033550;
+  border: 3px solid #033550; }
 
 .sidebar {
   margin-left: 20px;
@@ -305,7 +305,7 @@ button:hover .button-image {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(180, 70, 7, 0.5);
+    background-color: rgba(7, 117, 180, 0.5);
     transition: background-color 300ms;
     border-radius: 0; }
   .sidebar-ad:hover::after {
@@ -316,13 +316,13 @@ button:hover .button-image {
   left: 192px;
   top: 305px;
   font-size: 13px;
-  color: #beada2; }
+  color: #A2B3BE; }
 
 .sidebar-ad p:hover {
-  color: #b44607; }
+  color: #0775B4; }
 
 .sidebar h4 {
-  color: #b44607;
+  color: #0775B4;
   margin-bottom: 0;
   font-size: 17px; }
 
@@ -331,16 +331,16 @@ button:hover .button-image {
   margin-top: 5px;
   font-size: 13.5px;
   line-height: 1.7;
-  color: #beada2; }
+  color: #A2B3BE; }
 
 .mpp {
   height: 145px;
-  border-top: solid #beada2 1px;
+  border-top: solid #A2B3BE 1px;
   margin: 0;
   font-size: 61px;
   padding-top: 23px;
   text-align: center;
-  color: #501e03; }
+  color: #033550; }
 
 .photo {
   height: 331px;
@@ -366,7 +366,7 @@ button:hover .button-image {
   min-width: 300px;
   width: 25%;
   height: 100%;
-  color: #501e03;
+  color: #033550;
   position: relative; }
   .photo div::after {
     content: '';
@@ -375,7 +375,7 @@ button:hover .button-image {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(180, 70, 7, 0.5);
+    background-color: rgba(7, 117, 180, 0.5);
     transition: background-color 300ms;
     border-radius: 0; }
   .photo div:hover::after {
@@ -398,22 +398,22 @@ button:hover .button-image {
 
 footer {
   height: 98px;
-  background-color: #501e03;
-  color: #beada2; }
+  background-color: #033550;
+  color: #A2B3BE; }
 
 footer a {
   transition: all 300ms;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
-  color: #beada2; }
+  color: #A2B3BE; }
 
 .footer-logo {
   margin-top: 13px;
   margin-left: 151px; }
 
 footer a:visited {
-  color: #beada2; }
+  color: #A2B3BE; }
 
 footer p {
   display: inline-block;
