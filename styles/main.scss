@@ -4,12 +4,11 @@ $french-blue: #0775B4;
 $shuttle-gray: #5D686E;
 $casper-gray: #A2B3BE;
 
-$primary-color: complement($prussian-blue);
-$primary-accent-color: complement($french-blue);
+$primary-color: $prussian-blue;
+$primary-accent-color: $french-blue;
 
-$secondary-color: complement($shuttle-gray);
-$secondary-accent-color: complement($casper-gray);
-
+$secondary-color: $shuttle-gray;
+$secondary-accent-color: $casper-gray;
 /*
 Fonts
 */
