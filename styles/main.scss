@@ -86,6 +86,11 @@ header {
   @include transluscent-background($primary-accent-color, 30s);
 }
 
+.header-contents {
+  position: relative;
+  z-index: 10;
+}
+
 .header-links{
   padding-top: 5px;
   margin-left: 137px;

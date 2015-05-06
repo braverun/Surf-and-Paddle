@@ -47,6 +47,10 @@ header {
   header:hover::after {
     background-color: transparent; }
 
+.header-contents {
+  position: relative;
+  z-index: 10; }
+
 .header-links {
   padding-top: 5px;
   margin-left: 137px; }
