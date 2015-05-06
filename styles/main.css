@@ -43,7 +43,7 @@ header {
     left: 0;
     background-color: rgba(7, 117, 180, 0.5);
     transition: background-color 30s;
-    border-radius: 0; }
+    border-radius: 0%; }
   header:hover::after {
     background-color: transparent; }
 
@@ -120,14 +120,14 @@ header {
   text-decoration: none; }
 
 .profile span {
-  color: #033550; }
+  color: #0775B4; }
 
 .profile span:hover {
   color: #A2B3BE; }
 
 .profile div {
   border-radius: 50%;
-  background-image: url("http://suitcasestories.com/wp-content/uploads/2013/04/DSC_0055.jpg");
+  background-image: url("../sloth.jpg");
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -296,7 +296,7 @@ button:hover .button-image {
   transition: color 300ms;
   background-position: center center;
   background-size: cover;
-  background-image: url("http://www.animalnational.com/wp-content/uploads/2013/09/african-elephants-....jpg");
+  background-image: url("../add-image.jpg");
   position: relative; }
   .sidebar-ad::after {
     content: '';
@@ -377,7 +377,7 @@ button:hover .button-image {
     left: 0;
     background-color: rgba(7, 117, 180, 0.5);
     transition: background-color 300ms;
-    border-radius: 0; }
+    border-radius: 0%; }
   .photo div:hover::after {
     background-color: transparent; }
 
@@ -385,16 +385,16 @@ button:hover .button-image {
   color: white; }
 
 .photo-1 {
-  background-image: url("http://images.fineartamerica.com/images-medium-large/1-llama-teeth-daniela-kriva.jpg"); }
+  background-image: url("../llama-1.jpg"); }
 
 .photo-2 {
-  background-image: url("http://farm5.staticflickr.com/4097/4750603032_4f1a3247da_z.jpg"); }
+  background-image: url("../llama-2.jpg"); }
 
 .photo-3 {
-  background-image: url("http://wac.450f.edgecastcdn.net/80450F/thefw.com/files/2012/11/tumblr_ls6ujhB6wV1qfq9oxo1_5001.jpg"); }
+  background-image: url("../llama-3.jpg"); }
 
 .photo-4 {
-  background-image: url("http://tripswithchris.files.wordpress.com/2009/05/imgp1249.jpg"); }
+  background-image: url("../llama-4.jpg"); }
 
 footer {
   height: 98px;
@@ -431,10 +431,7 @@ footer ul {
 footer li {
   padding: 6px; }
 
-.nav2 {
-  margin-left: -3px; }
-
-.nav3 {
+.nav2, .nav3 {
   margin-left: -3px; }
 
 .nav5 {

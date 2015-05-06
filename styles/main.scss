@@ -9,16 +9,18 @@ $primary-accent-color: $french-blue;
 
 $secondary-color: $shuttle-gray;
 $secondary-accent-color: $casper-gray;
+
 /*
 Fonts
 */
+
 $body-font: 'Open Sans', sans-serif;
 $heading-font: 'Oswald', sans-serif;
 
 /*
 Mixins
 */
-@mixin transluscent-background($color, $duration: 300ms, $border-radius: 0) {
+@mixin transluscent-background($color, $duration: 300ms, $border-radius: 0%) {
   position: relative;
 
   &::after {
@@ -75,7 +77,7 @@ a:hover{
   footer &{color:white;}
 }
 
-header{
+header {
   position:relative;
   height: $header-height;
   background-image: url("../goofy.jpg");
@@ -83,6 +85,7 @@ header{
   background-size: cover;
   @include transluscent-background($primary-accent-color, 30s);
 }
+
 .header-links{
   padding-top: 5px;
   margin-left: 137px;
@@ -95,27 +98,30 @@ header{
   color:black;
   text-decoration: none;
 }
-.header-links a:hover, .header-links span:hover{
+.header-links a:hover, .header-links span:hover {
   color:white;
 }
-.header-links span{
+.header-links span {
   transition: all 300ms;
   color:black;
   font-size:16px;
   line-height: 3.3;
 }
-.about{
+.about {
   margin-left: 592px;
   font-size: 18px;
 }
-.search{
+
+.search {
   font-size: 18px;
   margin-left: 10px;
 }
+
 .search:hover > div{
   background-image: url("../search-white.png");
 }
-.search div{
+
+.search div {
   transition:all 300ms;
   display:inline-block;
   vertical-align:middle;
@@ -125,13 +131,16 @@ header{
   height:26px;
   background-image: url("../search.png");
 }
-.header-links img, .header-links a{
+
+.header-links img, .header-links a {
   vertical-align: middle;
 }
+
 .header-text h1, h3{
   margin: 0;
   text-align: center;
 }
+
 .header-text h1{
   color:white;
   margin-top: 135px;
@@ -139,6 +148,7 @@ header{
   margin-bottom: -11px;
   font-size: 96px;
 }
+
 .header-text h3{
   font-size:12px;
 }
@@ -157,14 +167,14 @@ header{
   text-decoration: none;
 }
 .profile span{
-  color:$primary-color;
+  color:$primary-accent-color;
 }
 .profile span:hover{
   color:$secondary-accent-color;
 }
 .profile div{
   border-radius: 50%;
-  background-image: url("http://suitcasestories.com/wp-content/uploads/2013/04/DSC_0055.jpg");
+  background-image: url("../sloth.jpg");
   background-position: center center;
   background-size: cover;
   position:relative;
@@ -322,7 +332,7 @@ button:hover .button-image{
   transition: color 300ms;
   background-position: center center;
   background-size: cover;
-  background-image: url("http://www.animalnational.com/wp-content/uploads/2013/09/african-elephants-....jpg");
+  background-image: url("../add-image.jpg");
   @include transluscent-background($primary-accent-color, 300ms, 0);
 }
 
@@ -382,23 +392,23 @@ button:hover .button-image{
   width:25%;
   height:100%;
   color: $primary-color;
-  @include transluscent-background($primary-accent-color, 300ms,0);
+  @include transluscent-background($primary-accent-color, 300ms);
 }
 .photo div:hover {
   color: white;
 }
 
 .photo-1{
-  background-image:url("http://images.fineartamerica.com/images-medium-large/1-llama-teeth-daniela-kriva.jpg");
+  background-image:url("../llama-1.jpg");
 }
 .photo-2{
-  background-image:url("http://farm5.staticflickr.com/4097/4750603032_4f1a3247da_z.jpg");
+  background-image:url("../llama-2.jpg");
 }
 .photo-3{
-  background-image:url("http://wac.450f.edgecastcdn.net/80450F/thefw.com/files/2012/11/tumblr_ls6ujhB6wV1qfq9oxo1_5001.jpg")
+  background-image:url("../llama-3.jpg");
 }
 .photo-4{
-  background-image:url("http://tripswithchris.files.wordpress.com/2009/05/imgp1249.jpg");
+  background-image:url("../llama-4.jpg");
 }
 
 footer{
@@ -437,10 +447,7 @@ footer ul{
 footer li{
   padding:6px;
 }
-.nav2{
-  margin-left: -3px;
-}
-.nav3{
+.nav2, .nav3{
   margin-left: -3px;
 }
 .nav5{
